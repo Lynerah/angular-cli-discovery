@@ -1,12 +1,13 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-child',
   templateUrl: './child.component.html',
   //Way one to style component: setting style ou styleUrl metadata
   // styles:['h2{color: green}']
-  styleUrls: ['./child.component.css']
-
+  styleUrls: ['./child.component.css'],
+  // remove the additional CSS selectors 
+  encapsulation: ViewEncapsulation.None
 })
 export class ChildComponent implements OnInit {
 @Input() childMessage!: string;

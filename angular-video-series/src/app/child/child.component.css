@@ -1,3 +1,6 @@
+/* Last way CSS imports */
+@import '../../assets/external-style.css';
+/* first way: Use stylesUrls */
 h2{
    color: blueviolet;
 }
